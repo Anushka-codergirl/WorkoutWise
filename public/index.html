@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workout Wise</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1><i class="fa-solid fa-dumbbell"></i> Workout Wise</h1>
+        <h3>Master Every Move, Maximize Every Benefit</h3>
+        <p>Upload an image of a workout/exercise or gym equipment to receive detailed information!</p>
+        <form id="form" enctype="multipart/form-data">
+            <div class="upload-area" id="dropArea" role="button" aria-label="Drag and drop or click to upload an image">
+                <i class="fa fa-cloud-upload upload-icon"></i>
+                <p class="upload-text">Drag & Drop or Click to Upload An Image</p>
+                <input type="file" name="image" accept="image/*" id="inputImg" aria-label="Upload Image" />
+                <img id="imgPreview" alt="Image Preview" />
+            </div>
+            <button type="submit">
+                <i class="fa fa-circle-info"></i> Get Information
+            </button>
+        </form>
+
+        <div id="loader" style="display: none">
+            <i class="fa fa-spinner fa-spin"></i> Processing this image.....
+        </div>
+        <div id="result" style="display: none;"></div>
+        <button id="downloadBtn" style="display: none">
+            <i class="fa fa-file-pdf"></i> Download PDF
+        </button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

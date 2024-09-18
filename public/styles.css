@@ -1,0 +1,87 @@
+/** Add styles here */body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 30px;
+    background: linear-gradient(135deg, #8e2de2, #0077e0);
+    background-size: cover; 
+    background-attachment: fixed; 
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.15); 
+    border-radius: 10px; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); 
+    border: 1px solid rgba(255, 255, 255, 0.25); 
+}
+
+.upload-area {
+    border: 2px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    backdrop-filter: blur(10px); 
+}
+
+.upload-icon {
+    font-size: 42px;
+    color: #f0ebf4;
+}
+
+.upload-text {
+    font-weight: bold;
+}
+
+#inputImg {
+    display: none;
+}
+
+#imgPreview {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto; 
+    border-radius: 10px;
+    display: none; 
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+    background: rgba(255, 255, 255, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.3);     
+    backdrop-filter: blur(10px); 
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    transition: background-color 0.3s, border-color 0.3s;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+button:hover {
+    background: rgba(104, 96, 245, 0.3); 
+    border-color: rgba(255, 255, 255, 0.4); 
+}
+
+#loading, #result {
+    text-align: left;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#result {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25); 
+    backdrop-filter: blur(8px);
+}
